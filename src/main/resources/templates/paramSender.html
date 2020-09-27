@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="${title}"></title>
+</head>
+<body>
+<h1 th:text="${title}"></h1>
+
+<p><a th:href="@{/params/show(param='Jorge Galindo')}">/params/show?param=Jorge Galindo</a></p>
+<p><a th:href="@{/params/show(param='Diana Morcillo')}">/params/show?param=Diana Morcillo</a></p>
+<p><a th:href="@{/params/mix(string='Hello world', number=25)}">/params/mix?string=Hello world!&number=25</a></p>
+<p><a th:href="@{/params/mix-servlet(string='Hello world', number=25)}">/params/mix?string=Hello world!&number=25</a></p>
+</body>
+</html>
