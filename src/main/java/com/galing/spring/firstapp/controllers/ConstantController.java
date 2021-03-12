@@ -21,6 +21,6 @@ public class ConstantController {
 
     @RequestMapping(value = "forward", method = RequestMethod.GET)
     public String forwardToGoogle(Model model){
-        return "forward:/app/index";
+        return "forward:/app/home";
     }
 }

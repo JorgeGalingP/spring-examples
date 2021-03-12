@@ -48,7 +48,6 @@ public class ParamsController {
 
         model.addAttribute("title", "HTTP GET Send params:");
         model.addAttribute("test", "The selected string is " + string + " and the number is " + number);
-
         model.addAttribute("title", "HTTP GET Send params:");
 
         return "paramShow";

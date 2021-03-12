@@ -29,7 +29,7 @@ public class VariableRouteController {
     @GetMapping("/string/{text}/{number}")
     public String variables(@PathVariable(name="text") String stringText, @PathVariable Integer number, Model model){
         model.addAttribute("title", "Recibir dos parámetros de la ruta(@PathVariable)");
-        model.addAttribute("result", "El parámetro de la ruta es: " + stringText + " y el numbero es: " + number);
+        model.addAttribute("result", "El parámetro de la ruta es: " + stringText + " y el numero es: " + number);
 
         return "variables/show";
     }
